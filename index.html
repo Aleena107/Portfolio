@@ -189,33 +189,16 @@
       .nav-links{display:none;}
       .hamburger{display:flex;}
 
-      /* Hero — photo on top, text below, no dead space */
-      #hero{
-        min-height:auto;
-        padding-top:80px;
-        padding-bottom:48px;
-        padding-left:20px;
-        padding-right:20px;
-        align-items:flex-start;
-      }
-      .hero-grid{
-        grid-template-columns:1fr;
-        gap:28px;
-        text-align:center;
-      }
-      /* Swap order: photo first, text second */
-      .hero-grid > div:first-child{order:2;}
-      .hero-right{order:1;gap:14px;}
-
+      /* Hero - text first, photo second */
+      #hero{padding-left:20px;padding-right:20px;}
+      .sec{padding:56px 20px;}
+      .hero-grid{grid-template-columns:1fr;gap:32px;text-align:center;}
       .hero-badge{justify-content:center;}
       .hero-btns{justify-content:center;}
       .hero-desc{margin:0 auto 28px;}
-      .photo-ring{width:160px;height:160px;}
+      .photo-ring{width:180px;height:180px;}
       .currently-pill{max-width:320px;}
       .hero-chips{max-width:320px;}
-
-      /* Sections */
-      .sec{padding:56px 20px;}
 
       /* About */
       .about-grid{grid-template-columns:1fr;gap:36px;}
@@ -232,6 +215,16 @@
       /* Contact */
       .contact-grid{grid-template-columns:1fr;gap:24px;}
       .crow{grid-template-columns:1fr;}
+
+      .hero-btns{
+  justify-content:center;
+  margin-top:20px;
+}
+
+.hero-btns a{
+  min-width:170px;
+  text-align:center;
+}
     }
 
     @media(max-width:560px){
@@ -244,75 +237,180 @@
       .photo-ring{width:140px;height:140px;}
       .exp-glass{padding:24px 20px;}
       .exp-role{font-size:1.15rem;}
+
+      .hero-btns{
+  justify-content:center;
+  margin-top:20px;
+}
+
+.hero-btns a{
+  min-width:170px;
+  text-align:center;
+}
     }
 
-    /* ── 400px and under ─────────────────────────────────────── */
-    @media(max-width:400px){
-      /* Nav */
-      nav{padding:11px 12px;}
-      .nav-logo{font-size:0.95rem;}
+    /* EXTRA SMALL DEVICES (400px and below) */
+@media (max-width:400px){
 
-      /* Hero */
-      #hero{padding-left:12px !important;padding-right:12px !important;padding-top:72px;padding-bottom:36px;}
-      .hero-grid{gap:20px;}
-      .hero-name{font-size:clamp(2rem,10.5vw,2.8rem) !important;margin-bottom:10px;}
-      .hero-role{font-size:0.8rem;margin-bottom:14px;}
-      .hero-btns{gap:9px;}
-      .btn-glow,.btn-ghost{padding:9px 17px;font-size:0.77rem;}
-      .photo-ring{width:120px;height:120px;}
-      .hero-right{gap:10px;}
-      .currently-pill{padding:7px 12px;gap:8px;}
-      .cp-label{font-size:0.54rem;}
-      .cp-val{font-size:0.71rem;}
-      .cp-dot{width:7px;height:7px;}
-      .hero-chips{gap:5px;}
-      .hchip{font-size:0.62rem;padding:3px 9px;}
+  /* Navigation */
+  nav{
+    padding:12px 14px;
+  }
 
-      /* Sections */
-      .sec{padding:36px 12px !important;}
-      .sec-title{font-size:1.45rem !important;margin-bottom:28px;}
-      .sec-tag{font-size:0.6rem;}
+  .nav-logo{
+    font-size:1rem;
+  }
 
-      /* About */
-      .about-p{font-size:0.84rem;}
-      .about-stats{grid-template-columns:1fr 1fr;gap:8px;}
-      .stat-glass{padding:12px 8px;}
-      .stat-num{font-size:0.85rem !important;margin-top:5px;}
-      .stat-lbl{font-size:0.57rem;}
+  /* Hero */
+  #hero{
+    padding-left:12px !important;
+    padding-right:12px !important;
+    min-height:auto;
+    padding-top:90px;
+    padding-bottom:40px;
+  }
 
-      /* Skills */
-      .skill-cats{gap:6px;margin-bottom:20px;}
-      .scat{font-size:0.67rem;padding:5px 11px;}
-      .skills-grid{grid-template-columns:repeat(auto-fill,minmax(58px,1fr));gap:7px;}
-      .sk{padding:10px 5px;border-radius:10px;}
-      .sk img{width:20px;height:20px;}
-      .sk-name{font-size:0.56rem;}
+  .hero-grid{
+    gap:24px;
+  }
 
-      /* Projects */
-      .proj-panel-wrap h3{font-size:1.1rem !important;}
-      .ptag{font-size:0.62rem;padding:3px 9px;}
+  .hero-name{
+    font-size:2.3rem;
+    line-height:1.05;
+  }
 
-      /* Experience */
-      .exp-glass{padding:18px 14px;}
-      .exp-role{font-size:1rem;}
-      .exp-date{font-size:0.63rem;padding:4px 10px;}
-      .exp-pts li{font-size:0.79rem;}
+  .hero-role{
+    font-size:0.82rem;
+  }
 
-      /* Education */
-      .edu-grid{gap:12px !important;}
+  .hero-btns{
+    width:100%;
+  }
 
-      /* Contact */
-      .contact-grid{gap:16px;}
-      .contact-lead{font-size:0.83rem;margin-bottom:16px;}
-      .c-link{font-size:0.77rem;padding:9px 11px;gap:9px;}
-      .c-ico{width:30px;height:30px;font-size:0.8rem;}
-      .fg label{font-size:0.6rem;}
-      .fg input,.fg textarea{font-size:0.82rem;padding:9px 12px;}
-      .crow{grid-template-columns:1fr;}
+  .hero-btns a{
+    width:100%;
+    text-align:center;
+  }
 
-      /* Footer */
-      footer{font-size:0.67rem;padding:20px 12px;}
-    }
+  .photo-ring{
+    width:120px;
+    height:120px;
+  }
+
+  .currently-pill{
+    padding:8px 12px;
+  }
+
+  .cp-val{
+    font-size:0.72rem;
+  }
+
+  .hero-chips{
+    gap:5px;
+  }
+
+  .hchip{
+    font-size:0.62rem;
+    padding:4px 9px;
+  }
+
+  /* Sections */
+  .sec{
+    padding:40px 12px !important;
+  }
+
+  .sec-title{
+    font-size:1.6rem;
+    margin-bottom:28px;
+  }
+
+  /* About */
+  .about-stats{
+    grid-template-columns:1fr;
+  }
+
+  .stat-glass{
+    padding:14px;
+  }
+
+  /* Skills */
+  .skills-grid{
+    grid-template-columns:repeat(3,1fr);
+    gap:8px;
+  }
+
+  .sk{
+    padding:10px 6px;
+  }
+
+  .sk img{
+    width:22px;
+    height:22px;
+  }
+
+  .sk-name{
+    font-size:0.55rem;
+  }
+
+  /* Projects */
+  .proj-panel-wrap{
+    padding-top:20px !important;
+  }
+
+  .proj-tabs-col{
+    gap:0;
+  }
+
+  .proj-tab-btn{
+    font-size:0.72rem !important;
+    padding:12px 14px !important;
+  }
+
+  /* Experience */
+  .exp-glass{
+    padding:18px 16px;
+  }
+
+  .exp-role{
+    font-size:1rem;
+  }
+
+  .exp-pts li{
+    font-size:0.8rem;
+  }
+
+  /* Education */
+  .edu-grid{
+    gap:12px !important;
+  }
+
+  /* Contact */
+  .contact-lead{
+    font-size:0.82rem;
+  }
+
+  .c-link{
+    font-size:0.72rem;
+    padding:10px 12px;
+    word-break:break-word;
+  }
+
+  .contact-grid div[style*="grid-template-columns:1fr 1fr"]{
+    grid-template-columns:1fr !important;
+  }
+
+  .fg input,
+  .fg textarea{
+    font-size:0.8rem;
+  }
+
+  /* Footer */
+  footer{
+    font-size:0.68rem;
+    padding:22px 12px;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -359,7 +457,7 @@
     <div>
       <h1 class="hero-name fi in d1">Aleena<br/><span class="line2">Biju.</span></h1>
       <p class="hero-role fi in d2">Software Developer &nbsp;·&nbsp; <span>Java Full Stack</span></p>
-      <div class="hero-btns fi in d3">
+      <div class="hero-btns fi in d3" id="heroButtons">
         <a href="#projects" class="btn-glow">View My Work</a>
         <a href="#contact" class="btn-ghost">Get in Touch</a>
       </div>
@@ -685,6 +783,38 @@
       document.querySelectorAll('.sk').forEach(s=>s.classList.toggle('show',c==='all'||s.dataset.cat===c));
     });
   });
+
+  function moveHeroButtons() {
+  const buttons = document.getElementById("heroButtons");
+  const heroRight = document.querySelector(".hero-right");
+  const leftCol = document.querySelector(".hero-grid > div:first-child");
+
+  const primaryBtn = buttons.querySelector(".btn-glow");
+
+  if (window.innerWidth <= 900) {
+
+    // Change button text and link
+    primaryBtn.textContent = "Resume";
+    primaryBtn.href = "./Resume-Aleena Biju.pdf";
+    primaryBtn.setAttribute("download", "");
+
+    // Move buttons below hero-right (photo + chips)
+    heroRight.after(buttons);
+
+  } else {
+
+    // Restore desktop button
+    primaryBtn.textContent = "View My Work";
+    primaryBtn.href = "#projects";
+    primaryBtn.removeAttribute("download");
+
+    // Move buttons back under intro text
+    leftCol.appendChild(buttons);
+  }
+}
+
+moveHeroButtons();
+window.addEventListener("resize", moveHeroButtons);
 
   /* SCROLL REVEAL */
   const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in');});},{threshold:0.07});

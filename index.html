@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>Aleena Biju — Software Developer</title>
+  <title>Aleena Biju — Java Developer</title>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <style>
     :root,[data-theme="dark"]{
@@ -94,7 +94,7 @@
     .hero-badge{display:inline-flex;align-items:center;gap:10px;background:var(--sky-dim);border:1px solid rgba(56,189,248,0.25);color:var(--sky);font-size:0.72rem;font-weight:500;letter-spacing:0.06em;padding:6px 16px;border-radius:100px;margin-bottom:22px;}
     .badge-dot{width:7px;height:7px;background:var(--sky);border-radius:50%;box-shadow:0 0 8px var(--sky);animation:blink 2s infinite;}
     @keyframes blink{0%,100%{opacity:1;}50%{opacity:0.3;}}
-    .hero-name{font-family:'Syne',sans-serif;font-size:clamp(2.8rem,6vw,5.4rem);font-weight:800;line-height:1.0;margin-bottom:14px;letter-spacing:-0.02em;}
+    .hero-name{font-family:'Syne',sans-serif;font-size:clamp(2.8rem,6vw,5.4rem);font-weight:900;line-height:1.0;margin-bottom:14px;}
     .hero-name .line2{background:linear-gradient(135deg,var(--sky),var(--rose));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
     .hero-role{font-size:0.95rem;font-weight:400;color:var(--muted);margin-bottom:16px;letter-spacing:0.03em;}
     .hero-role span{color:var(--sky);}
@@ -106,7 +106,7 @@
 
     /* HERO RIGHT */
     .hero-right{display:flex;flex-direction:column;align-items:center;gap:16px;}
-    .photo-ring{position:relative;width:200px;height:200px;flex-shrink:0;}
+    .photo-ring{position:relative;width:250px;height:250px;flex-shrink:0;}
     .photo-ring::before{content:'';position:absolute;inset:-4px;background:conic-gradient(from 0deg,var(--sky),var(--rose),#818CF8,var(--sky));border-radius:50%;animation:spin 6s linear infinite;z-index:0;}
     .photo-ring::after{content:'';position:absolute;inset:-2px;background:var(--bg);border-radius:50%;z-index:1;transition:background 0.45s;}
     @keyframes spin{to{transform:rotate(360deg);}}
@@ -189,16 +189,33 @@
       .nav-links{display:none;}
       .hamburger{display:flex;}
 
-      /* Hero - text first, photo second */
-      #hero{padding-left:20px;padding-right:20px;}
-      .sec{padding:56px 20px;}
-      .hero-grid{grid-template-columns:1fr;gap:32px;text-align:center;}
+      /* Hero — photo on top, text below, no dead space */
+      #hero{
+        min-height:auto;
+        padding-top:80px;
+        padding-bottom:48px;
+        padding-left:20px;
+        padding-right:20px;
+        align-items:flex-start;
+      }
+      .hero-grid{
+        grid-template-columns:1fr;
+        gap:28px;
+        text-align:center;
+      }
+      /* Swap order: photo first, text second */
+      .hero-grid > div:first-child{order:2;}
+      .hero-right{order:1;gap:14px;}
+
       .hero-badge{justify-content:center;}
       .hero-btns{justify-content:center;}
       .hero-desc{margin:0 auto 28px;}
       .photo-ring{width:160px;height:160px;}
       .currently-pill{max-width:320px;}
       .hero-chips{max-width:320px;}
+
+      /* Sections */
+      .sec{padding:56px 20px;}
 
       /* About */
       .about-grid{grid-template-columns:1fr;gap:36px;}
@@ -227,6 +244,74 @@
       .photo-ring{width:140px;height:140px;}
       .exp-glass{padding:24px 20px;}
       .exp-role{font-size:1.15rem;}
+    }
+
+    /* ── 400px and under ─────────────────────────────────────── */
+    @media(max-width:400px){
+      /* Nav */
+      nav{padding:11px 12px;}
+      .nav-logo{font-size:0.95rem;}
+
+      /* Hero */
+      #hero{padding-left:12px !important;padding-right:12px !important;padding-top:72px;padding-bottom:36px;}
+      .hero-grid{gap:20px;}
+      .hero-name{font-size:clamp(2rem,10.5vw,2.8rem) !important;margin-bottom:10px;}
+      .hero-role{font-size:0.8rem;margin-bottom:14px;}
+      .hero-btns{gap:9px;}
+      .btn-glow,.btn-ghost{padding:9px 17px;font-size:0.77rem;}
+      .photo-ring{width:120px;height:120px;}
+      .hero-right{gap:10px;}
+      .currently-pill{padding:7px 12px;gap:8px;}
+      .cp-label{font-size:0.54rem;}
+      .cp-val{font-size:0.71rem;}
+      .cp-dot{width:7px;height:7px;}
+      .hero-chips{gap:5px;}
+      .hchip{font-size:0.62rem;padding:3px 9px;}
+
+      /* Sections */
+      .sec{padding:36px 12px !important;}
+      .sec-title{font-size:1.45rem !important;margin-bottom:28px;}
+      .sec-tag{font-size:0.6rem;}
+
+      /* About */
+      .about-p{font-size:0.84rem;}
+      .about-stats{grid-template-columns:1fr 1fr;gap:8px;}
+      .stat-glass{padding:12px 8px;}
+      .stat-num{font-size:0.85rem !important;margin-top:5px;}
+      .stat-lbl{font-size:0.57rem;}
+
+      /* Skills */
+      .skill-cats{gap:6px;margin-bottom:20px;}
+      .scat{font-size:0.67rem;padding:5px 11px;}
+      .skills-grid{grid-template-columns:repeat(auto-fill,minmax(58px,1fr));gap:7px;}
+      .sk{padding:10px 5px;border-radius:10px;}
+      .sk img{width:20px;height:20px;}
+      .sk-name{font-size:0.56rem;}
+
+      /* Projects */
+      .proj-panel-wrap h3{font-size:1.1rem !important;}
+      .ptag{font-size:0.62rem;padding:3px 9px;}
+
+      /* Experience */
+      .exp-glass{padding:18px 14px;}
+      .exp-role{font-size:1rem;}
+      .exp-date{font-size:0.63rem;padding:4px 10px;}
+      .exp-pts li{font-size:0.79rem;}
+
+      /* Education */
+      .edu-grid{gap:12px !important;}
+
+      /* Contact */
+      .contact-grid{gap:16px;}
+      .contact-lead{font-size:0.83rem;margin-bottom:16px;}
+      .c-link{font-size:0.77rem;padding:9px 11px;gap:9px;}
+      .c-ico{width:30px;height:30px;font-size:0.8rem;}
+      .fg label{font-size:0.6rem;}
+      .fg input,.fg textarea{font-size:0.82rem;padding:9px 12px;}
+      .crow{grid-template-columns:1fr;}
+
+      /* Footer */
+      footer{font-size:0.67rem;padding:20px 12px;}
     }
   </style>
 </head>
@@ -272,7 +357,6 @@
 <div id="hero">
   <div class="hero-grid">
     <div>
-      <div class="hero-badge fi in"><span class="badge-dot"></span>Open to Opportunities</div>
       <h1 class="hero-name fi in d1">Aleena<br/><span class="line2">Biju.</span></h1>
       <p class="hero-role fi in d2">Software Developer &nbsp;·&nbsp; <span>Java Full Stack</span></p>
       <div class="hero-btns fi in d3">

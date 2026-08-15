@@ -428,7 +428,7 @@
     <li><a href="#projects">Projects</a></li>
     <li><a href="#exp">Experience</a></li>
     <li><a href="#edu">Education</a></li>
-    <li><a href="./Resume-Aleena Biju.pdf" download class="nav-cta">Resume</a></li>
+    <li><a href="./Aleena_Biju_Resume.pdf" download class="nav-cta">Resume</a></li>
   </ul>
   <div class="nav-right">
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
@@ -449,7 +449,8 @@
   <a href="#projects" onclick="closeMobile()">Projects</a>
   <a href="#exp" onclick="closeMobile()">Experience</a>
   <a href="#edu" onclick="closeMobile()">Education</a>
-  <a href="./Resume-Aleena Biju.pdf" download class="mob-cta">Resume ↓</a>
+  <a href="#certs" onclick="closeMobile()">Certifications</a>
+  <a href="./Aleena_Biju_Resume.pdf" download class="mob-cta">Resume ↓</a>
 </div>
 
 <div class="page">
@@ -458,8 +459,12 @@
 <div id="hero">
   <div class="hero-grid">
     <div>
+      <div class="hero-badge fi in d1">
+        <span class="badge-dot"></span> Open to Work
+      </div>
       <h1 class="hero-name fi in d1">Aleena<br/><span class="line2">Biju.</span></h1>
       <p class="hero-role fi in d2">Software Developer &nbsp;·&nbsp; <span>Java Full Stack Developer</span></p>
+      <p class="fi in d2" style="font-size:0.9rem;color:var(--muted);max-width:460px;margin-bottom:20px;line-height:1.7;">I build secure, full-stack applications end-to-end — Spring Boot APIs on the backend, React interfaces on the front, with authentication and access control baked in from day one.</p>
       <div class="hero-btns fi in d3" id="heroButtons">
         <a href="#projects" class="btn-glow">View My Work</a>
         <a href="#contact" class="btn-ghost">Get in Touch</a>
@@ -471,13 +476,15 @@
           <img src="myphoto.png" alt="Aleena Biju"/>
         </div>
       </div>
+
       <div class="currently-pill">
-        <div class="cp-dot"></div>
+        <span class="cp-dot"></span>
         <div>
-          <div class="cp-label">Currently Working On</div>
-          <div class="cp-val">Java Full Stack Intern @ TechnoSignia</div>
+          <div class="cp-label">Currently</div>
+          <div class="cp-val">Seeking Java Full Stack roles in Pune</div>
         </div>
       </div>
+
       <div class="hero-chips">
         <span class="hchip">Java</span>
         <span class="hchip">Spring Boot</span>
@@ -526,6 +533,7 @@
   <div class="skills-grid fi">
     <div class="sk show" data-cat="lang"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"/><span class="sk-name">Java</span></div>
     <div class="sk show" data-cat="fw"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring"/><span class="sk-name">Spring Boot</span></div>
+    <div class="sk show" data-cat="fw"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring Security"/><span class="sk-name">Spring Security</span></div>
     <div class="sk show" data-cat="lang"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"/><span class="sk-name">Python</span></div>
     <div class="sk show" data-cat="lang"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"/><span class="sk-name">JavaScript</span></div>
     <div class="sk show" data-cat="lang"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript"/><span class="sk-name">TypeScript</span></div>
@@ -544,6 +552,9 @@
     <div class="sk show" data-cat="tools"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch"/><span class="sk-name">PyTorch</span></div>
     <div class="sk show" data-cat="tools"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/maven/maven-original.svg" alt="Maven"/><span class="sk-name">Maven</span></div>
     <div class="sk show" data-cat="tools"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-plain.svg" alt="Hibernate"/><span class="sk-name">Hibernate</span></div>
+    <div class="sk show" data-cat="tools"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swagger/swagger-original.svg" alt="Swagger"/><span class="sk-name">Swagger</span></div>
+    <div class="sk show" data-cat="tools"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman"/><span class="sk-name">Postman</span></div>
+    <div class="sk show" data-cat="tools"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg" alt="GitHub Actions"/><span class="sk-name">GitHub Actions</span></div>
   </div>
 </div>
 
@@ -558,17 +569,40 @@
     <div class="proj-tabs-col" id="proj-tabs" style="display:flex;flex-direction:column;border-left:2px solid var(--glass-b);min-width:190px;">
       <button onclick="switchProj(0)" id="proj-tab-0" class="proj-tab-btn"
         style="padding:14px 18px;text-align:left;font-family:'Outfit',sans-serif;font-size:0.8rem;background:rgba(56,189,248,0.07);color:var(--sky);border:none;border-left:2px solid var(--sky);margin-left:-2px;cursor:pointer;letter-spacing:0.03em;transition:all 0.2s;white-space:nowrap;">
-        TaskFlow
+        OnboardX
       </button>
       <button onclick="switchProj(1)" id="proj-tab-1" class="proj-tab-btn"
         style="padding:14px 18px;text-align:left;font-family:'Outfit',sans-serif;font-size:0.8rem;background:transparent;color:var(--muted);border:none;border-left:2px solid transparent;margin-left:-2px;cursor:pointer;letter-spacing:0.03em;transition:all 0.2s;white-space:nowrap;">
-        Role-Based TMS
+        Taskly
+      </button>
+      <button onclick="switchProj(2)" id="proj-tab-2" class="proj-tab-btn"
+        style="padding:14px 18px;text-align:left;font-family:'Outfit',sans-serif;font-size:0.8rem;background:transparent;color:var(--muted);border:none;border-left:2px solid transparent;margin-left:-2px;cursor:pointer;letter-spacing:0.03em;transition:all 0.2s;white-space:nowrap;">
+        GuardTask
       </button>
     </div>
     <!-- PANEL -->
     <div class="proj-panel-wrap" style="flex:1;padding-left:40px;">
       <div id="proj-panel-0">
-        <h3 style="font-family:'Syne',sans-serif;font-size:1.4rem;font-weight:700;color:var(--text);margin-bottom:6px;">TaskFlow <span style="background:linear-gradient(135deg,var(--sky),var(--rose));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">— Task & Workflow Management</span></h3>
+        <h3 style="font-family:'Syne',sans-serif;font-size:1.4rem;font-weight:700;color:var(--text);margin-bottom:6px;">OnboardX <span style="background:linear-gradient(135deg,var(--sky),var(--rose));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">— IT Onboarding Automation Portal</span></h3>
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-bottom:20px;">
+          <span style="color:var(--muted);font-size:0.78rem;">📅 2026</span>
+          <div style="display:flex;align-items:center;gap:7px;padding:4px 12px;border-radius:100px;background:var(--sky-dim);border:1px solid rgba(56,189,248,0.2);">
+            <span style="width:6px;height:6px;background:var(--sky);border-radius:50%;animation:blink 2s infinite;display:inline-block;"></span>
+            <span style="color:var(--sky);font-size:0.7rem;font-weight:500;">Full Stack</span>
+          </div>
+          <a href="https://github.com/Aleena107/it-onboarding-automation-portal" target="_blank" style="display:flex;align-items:center;gap:5px;color:var(--muted);font-size:0.78rem;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--sky)'" onmouseout="this.style.color='var(--muted)'">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="14" class="github-ico" style="filter:invert(0.6)"/> GitHub ↗
+          </a>
+        </div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:12px;margin-bottom:24px;">
+          <li style="display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:0.86rem;line-height:1.75;"><span style="color:var(--sky);font-size:1rem;flex-shrink:0;">›</span><span>Developed a full-stack portal using <span style="color:var(--text);font-weight:500;">Java 17, Spring Boot, React.js, and PostgreSQL</span> to automate employee onboarding and IT asset management.</span></li>
+          <li style="display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:0.86rem;line-height:1.75;"><span style="color:var(--sky);font-size:1rem;flex-shrink:0;">›</span><span>Implemented <span style="color:var(--text);font-weight:500;">JWT authentication and RBAC</span> for five distinct roles — Admin, HR, Manager, IT Support, and Employee — with secure REST APIs via Spring Security.</span></li>
+          <li style="display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:0.86rem;line-height:1.75;"><span style="color:var(--sky);font-size:1rem;flex-shrink:0;">›</span><span>Built modules for <span style="color:var(--text);font-weight:500;">Employee Management, Onboarding Workflow, Dashboard Analytics, and Asset Allocation</span>, including CRUD operations, approval workflows, and role-specific dashboards.</span></li>
+        </ul>
+        <div style="display:flex;flex-wrap:wrap;gap:7px;"><span class="ptag">Java 17</span><span class="ptag">Spring Boot</span><span class="ptag">React.js</span><span class="ptag">PostgreSQL</span><span class="ptag">REST APIs</span><span class="ptag">Git</span></div>
+      </div>
+      <div id="proj-panel-1" style="display:none;">
+        <h3 style="font-family:'Syne',sans-serif;font-size:1.4rem;font-weight:700;color:var(--text);margin-bottom:6px;">Taskly <span style="background:linear-gradient(135deg,var(--sky),var(--rose));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">— Task & Workflow Management</span></h3>
         <div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-bottom:20px;">
           <span style="color:var(--muted);font-size:0.78rem;">📅 2025</span>
           <div style="display:flex;align-items:center;gap:7px;padding:4px 12px;border-radius:100px;background:var(--sky-dim);border:1px solid rgba(56,189,248,0.2);">
@@ -586,8 +620,8 @@
         </ul>
         <div style="display:flex;flex-wrap:wrap;gap:7px;"><span class="ptag">Java</span><span class="ptag">Spring Boot</span><span class="ptag">React.js</span><span class="ptag">TypeScript</span><span class="ptag">REST APIs</span><span class="ptag">Git</span></div>
       </div>
-      <div id="proj-panel-1" style="display:none;">
-        <h3 style="font-family:'Syne',sans-serif;font-size:1.4rem;font-weight:700;color:var(--text);margin-bottom:6px;">Role-Based Task Management <span style="color:var(--rose);">— Secure Full Stack App</span></h3>
+      <div id="proj-panel-2" style="display:none;">
+        <h3 style="font-family:'Syne',sans-serif;font-size:1.4rem;font-weight:700;color:var(--text);margin-bottom:6px;">GuardTask <span style="color:var(--rose);">— Role-Based Task Management</span></h3>
         <div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-bottom:20px;">
           <span style="color:var(--muted);font-size:0.78rem;">📅 2025</span>
           <div style="display:flex;align-items:center;gap:7px;padding:4px 12px;border-radius:100px;background:rgba(251,113,133,0.08);border:1px solid rgba(251,113,133,0.2);">
@@ -617,15 +651,14 @@
   <h2 class="sec-title">Work Experience</h2>
   <div class="exp-glass fi">
     <div class="exp-head">
-      <div><div class="exp-role">Java Full Stack Developer Intern</div><div class="exp-co">TechnoSignia</div></div>
-      <span class="exp-date">March 2026 – Present</span>
+      <div><div class="exp-role">Java Full Stack Developer Intern</div><div class="exp-co">StarCentauri Technologies Pvt. Ltd.</div></div>
+      <span class="exp-date">March – June 2026</span>
     </div>
     <ul class="exp-pts">
-      <li>Built backend services using Java and Spring Boot with a focus on scalable, maintainable architecture.</li>
-      <li>Developed and integrated RESTful APIs with secure authentication using Spring Security and JWT.</li>
-      <li>Implemented role-based access control (RBAC) and managed user authorization across backend modules.</li>
-      <li>Worked with relational and non-relational databases to support full application development cycles.</li>
-      <li>Collaborated using Git for version control, pull requests, code reviews, and project management.</li>
+      <li>Developed and integrated 5+ REST APIs using Java 17 and Spring Boot with JWT-based authentication and role-level authorization, enabling secure, stateless backend access control.</li>
+      <li>Implemented RBAC at the API layer using Spring Security, applying OOP principles and the Repository design pattern to maintain clean, maintainable service architecture.</li>
+      <li>Designed and managed PostgreSQL schemas, writing optimized queries for CRUD operations and improving data retrieval performance through proper indexing and relationship management.</li>
+      <li>Debugged backend issues across controller/service/repository layers and validated REST endpoints with Postman.</li>
     </ul>
   </div>
 </div>
@@ -649,7 +682,7 @@
       </div>
       <div style="margin-top:auto;padding-top:14px;border-top:1px solid var(--glass-b);display:flex;justify-content:space-between;align-items:center;">
         <span style="font-size:0.65rem;color:var(--dim);letter-spacing:0.06em;text-transform:uppercase;">CGPA</span>
-        <span style="font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:700;background:linear-gradient(135deg,var(--sky),var(--rose));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">8.24</span>
+        <span style="font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:700;background:linear-gradient(135deg,var(--sky),var(--rose));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">8.32</span>
       </div>
     </div>
     <!-- Card 2 -->
@@ -664,7 +697,7 @@
       </div>
       <div style="margin-top:auto;padding-top:14px;border-top:1px solid var(--glass-b);display:flex;justify-content:space-between;align-items:center;">
         <span style="font-size:0.65rem;color:var(--dim);letter-spacing:0.06em;text-transform:uppercase;">Percentage</span>
-        <span style="font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:700;background:linear-gradient(135deg,var(--rose),#818CF8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">54%</span>
+        <span style="font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:700;background:linear-gradient(135deg,var(--rose),#818CF8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">54.33%</span>
       </div>
     </div>
     <!-- Card 3 -->
@@ -680,6 +713,34 @@
       <div style="margin-top:auto;padding-top:14px;border-top:1px solid var(--glass-b);display:flex;justify-content:space-between;align-items:center;">
         <span style="font-size:0.65rem;color:var(--dim);letter-spacing:0.06em;text-transform:uppercase;">Percentage</span>
         <span style="font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:700;background:linear-gradient(135deg,#818CF8,var(--sky));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">76%</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- CERTIFICATIONS -->
+<div id="certs" class="sec">
+  <div class="sec-tag">Always Learning</div>
+  <h2 class="sec-title">Certifications</h2>
+  <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:18px;">
+    <div class="glass fi" style="padding:24px 26px;display:flex;align-items:center;gap:16px;">
+      <div style="width:44px;height:44px;flex-shrink:0;border-radius:12px;background:var(--sky-dim);display:flex;align-items:center;justify-content:center;">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="22"/>
+      </div>
+      <div>
+        <div style="font-family:'Syne',sans-serif;font-size:0.95rem;font-weight:700;color:var(--text);margin-bottom:3px;">Java for Beginners</div>
+        <div style="font-size:0.76rem;color:var(--muted);">Udemy</div>
+      </div>
+    </div>
+    <div class="glass fi" style="padding:24px 26px;display:flex;align-items:center;gap:16px;">
+      <div style="width:44px;height:44px;flex-shrink:0;border-radius:12px;background:var(--sky-dim);display:flex;align-items:center;justify-content:center;">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="22"/>
+      </div>
+      <div>
+        <div style="font-family:'Syne',sans-serif;font-size:0.95rem;font-weight:700;color:var(--text);margin-bottom:3px;">Full Stack Web Development Bootcamp</div>
+        <div style="font-size:0.76rem;color:var(--muted);">Udemy</div>
       </div>
     </div>
   </div>

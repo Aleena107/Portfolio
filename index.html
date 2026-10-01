@@ -428,7 +428,7 @@
     <li><a href="#projects">Projects</a></li>
     <li><a href="#exp">Experience</a></li>
     <li><a href="#edu">Education</a></li>
-    <li><a href="./Aleena_Biju_Resume.pdf" download class="nav-cta">Resume</a></li>
+    <li><a href="./Aleena_Biju_Developer.pdf" download class="nav-cta">Resume</a></li>
   </ul>
   <div class="nav-right">
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
@@ -450,7 +450,7 @@
   <a href="#exp" onclick="closeMobile()">Experience</a>
   <a href="#edu" onclick="closeMobile()">Education</a>
   <a href="#certs" onclick="closeMobile()">Certifications</a>
-  <a href="./Aleena_Biju_Resume.pdf" download class="mob-cta">Resume ↓</a>
+  <a href="./Aleena_Biju_Developer.pdf" download class="mob-cta">Resume ↓</a>
 </div>
 
 <div class="page">
@@ -575,7 +575,11 @@
         style="padding:14px 18px;text-align:left;font-family:'Outfit',sans-serif;font-size:0.8rem;background:transparent;color:var(--muted);border:none;border-left:2px solid transparent;margin-left:-2px;cursor:pointer;letter-spacing:0.03em;transition:all 0.2s;white-space:nowrap;">
         Taskly
       </button>
-      <button onclick="switchProj(2)" id="proj-tab-2" class="proj-tab-btn"
+      <button onclick="switchProj(2)" id="proj-tab-3" class="proj-tab-btn"
+        style="padding:14px 18px;text-align:left;font-family:'Outfit',sans-serif;font-size:0.8rem;background:transparent;color:var(--muted);border:none;border-left:2px solid transparent;margin-left:-2px;cursor:pointer;letter-spacing:0.03em;transition:all 0.2s;white-space:nowrap;">
+        WebGuard
+      </button>
+      <button onclick="switchProj(3)" id="proj-tab-2" class="proj-tab-btn"
         style="padding:14px 18px;text-align:left;font-family:'Outfit',sans-serif;font-size:0.8rem;background:transparent;color:var(--muted);border:none;border-left:2px solid transparent;margin-left:-2px;cursor:pointer;letter-spacing:0.03em;transition:all 0.2s;white-space:nowrap;">
         GuardTask
       </button>
@@ -620,7 +624,29 @@
         </ul>
         <div style="display:flex;flex-wrap:wrap;gap:7px;"><span class="ptag">Java</span><span class="ptag">Spring Boot</span><span class="ptag">React.js</span><span class="ptag">TypeScript</span><span class="ptag">REST APIs</span><span class="ptag">Git</span></div>
       </div>
+
       <div id="proj-panel-2" style="display:none;">
+        <h3 style="font-family:'Syne',sans-serif;font-size:1.4rem;font-weight:700;color:var(--text);margin-bottom:6px;">WebGuard <span style="background:linear-gradient(135deg,var(--sky),var(--rose));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">— AI-Assisted URL Risk Analyzer</span></h3>
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-bottom:20px;">
+          <span style="color:var(--muted);font-size:0.78rem;">📅 2026</span>
+          <div style="display:flex;align-items:center;gap:7px;padding:4px 12px;border-radius:100px;background:rgba(251,113,133,0.08);border:1px solid rgba(251,113,133,0.2);">
+            <span style="width:6px;height:6px;background:var(--rose);border-radius:50%;display:inline-block;"></span>
+            <span style="color:var(--rose);font-size:0.7rem;font-weight:500;">Security + AI</span>
+          </div>
+          <a href="https://github.com/Aleena107/WebGuard" target="_blank" style="display:flex;align-items:center;gap:5px;color:var(--muted);font-size:0.78rem;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='var(--sky)'" onmouseout="this.style.color='var(--muted)'">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="14" class="github-ico" style="filter:invert(0.6)"/> GitHub ↗
+          </a>
+        </div>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:12px;margin-bottom:24px;">
+          <li style="display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:0.86rem;line-height:1.75;"><span style="color:var(--sky);font-size:1rem;flex-shrink:0;">›</span><span>Developed a full-stack URL risk analysis platform using <span style="color:var(--text);font-weight:500;">React, TypeScript, and Flask REST APIs</span> to identify potential risk indicators in publicly accessible webpages.</span></li>
+          <li style="display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:0.86rem;line-height:1.75;"><span style="color:var(--sky);font-size:1rem;flex-shrink:0;">›</span><span>Implemented <span style="color:var(--text);font-weight:500;">web scraping and data extraction</span> with Requests and BeautifulSoup to analyze webpage metadata, forms, links, scripts, images, and password fields.</span></li>
+          <li style="display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:0.86rem;line-height:1.75;"><span style="color:var(--sky);font-size:1rem;flex-shrink:0;">›</span><span>Built an <span style="color:var(--text);font-weight:500;">explainable rule-based risk scoring engine</span> (Low / Medium / High) with <span style="color:var(--text);font-weight:500;">JWT authentication</span> and user-specific analysis history stored in MySQL.</span></li>
+          <li style="display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:0.86rem;line-height:1.75;"><span style="color:var(--sky);font-size:1rem;flex-shrink:0;">›</span><span>Integrated <span style="color:var(--text);font-weight:500;">Ollama / TinyLlama</span> as an AI explanation layer that generates concise, human-readable explanations of detected risk signals, without replacing the deterministic scoring logic.</span></li>
+        </ul>
+        <div style="display:flex;flex-wrap:wrap;gap:7px;"><span class="ptag">React.js</span><span class="ptag">TypeScript</span><span class="ptag">Python</span><span class="ptag">Flask</span><span class="ptag">MySQL</span><span class="ptag">JWT</span><span class="ptag">Ollama</span></div>
+      </div>
+
+      <div id="proj-panel-3" style="display:none;">
         <h3 style="font-family:'Syne',sans-serif;font-size:1.4rem;font-weight:700;color:var(--text);margin-bottom:6px;">GuardTask <span style="color:var(--rose);">— Role-Based Task Management</span></h3>
         <div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-bottom:20px;">
           <span style="color:var(--muted);font-size:0.78rem;">📅 2025</span>
